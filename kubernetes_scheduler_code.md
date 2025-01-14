@@ -255,7 +255,7 @@ func Run(ctx context.Context, cc *schedulerserverconfig.CompletedConfig, sched *
 
 [https://github.com/rfyiamcool/notes/blob/main/kubernetes_leader_election_code.md](https://github.com/rfyiamcool/notes/blob/main/kubernetes_leader_election_code.md)
 
-## scheudler 启动入口
+## scheduler 启动入口
 
 `Run()` 方法是 k8s scheduler 的启动运行入口, 其流程是先启动 queue 队列的 Run 方法, 再异步启动一个协程处理核心调度方法 `scheduleOne`.
 
